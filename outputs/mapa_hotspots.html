@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2192d1da368901b9df70bd9753d8042f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2192d1da368901b9df70bd9753d8042f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2192d1da368901b9df70bd9753d8042f = L.map(
+                "map_2192d1da368901b9df70bd9753d8042f",
+                {
+                    center: [-22.886, -43.104],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9732a9258bac9b32fe934c9f3e05eed = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_e9732a9258bac9b32fe934c9f3e05eed.addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var circle_marker_e0ffb48bdef2230b23c5123d012c4e8f = L.circleMarker(
+                [-22.88, -43.11],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.0, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_258921ae58928e4adb1179aff82ff2d5 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7136d596454a9e0ba441031a8a040381 = $(`<div id="html_7136d596454a9e0ba441031a8a040381" style="width: 100.0%; height: 100.0%;">     <b>#1 Ponto Crítico</b><br>     Acidentes: 79<br>     Lat: -22.8800 | Lon: -43.1100     </div>`)[0];
+                popup_258921ae58928e4adb1179aff82ff2d5.setContent(html_7136d596454a9e0ba441031a8a040381);
+            
+        
+
+        circle_marker_e0ffb48bdef2230b23c5123d012c4e8f.bindPopup(popup_258921ae58928e4adb1179aff82ff2d5)
+        ;
+
+        
+    
+    
+            var marker_47e754ccd03276dfdf23fbb804b62a6b = L.marker(
+                [-22.88, -43.11],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_ddc28242546f63ec39a944913d6af243 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#1\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_47e754ccd03276dfdf23fbb804b62a6b.setIcon(div_icon_ddc28242546f63ec39a944913d6af243);
+        
+    
+            var circle_marker_6b53fa2f4d21cf6d9c0e1c34a23b2a3e = L.circleMarker(
+                [-22.77, -42.92],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.78481012658228, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_9a21c6ebdef535a559f67e154176da0b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7135ceff02b6738f9f8607117c9ff02a = $(`<div id="html_7135ceff02b6738f9f8607117c9ff02a" style="width: 100.0%; height: 100.0%;">     <b>#2 Ponto Crítico</b><br>     Acidentes: 72<br>     Lat: -22.7700 | Lon: -42.9200     </div>`)[0];
+                popup_9a21c6ebdef535a559f67e154176da0b.setContent(html_7135ceff02b6738f9f8607117c9ff02a);
+            
+        
+
+        circle_marker_6b53fa2f4d21cf6d9c0e1c34a23b2a3e.bindPopup(popup_9a21c6ebdef535a559f67e154176da0b)
+        ;
+
+        
+    
+    
+            var marker_7d7ec3e2ecd026a69909212157bb2925 = L.marker(
+                [-22.77, -42.92],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_c5e237356595becb77f3846f9e2ab673 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#2\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_7d7ec3e2ecd026a69909212157bb2925.setIcon(div_icon_c5e237356595becb77f3846f9e2ab673);
+        
+    
+            var circle_marker_fada8e099f1841addc9cc03c0d211203 = L.circleMarker(
+                [-22.87, -43.11],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.253164556962027, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_fefc15674141a8d2ae19fcc582ecfa5e = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_87832cb28810dcc4d27efff66b21bb65 = $(`<div id="html_87832cb28810dcc4d27efff66b21bb65" style="width: 100.0%; height: 100.0%;">     <b>#3 Ponto Crítico</b><br>     Acidentes: 64<br>     Lat: -22.8700 | Lon: -43.1100     </div>`)[0];
+                popup_fefc15674141a8d2ae19fcc582ecfa5e.setContent(html_87832cb28810dcc4d27efff66b21bb65);
+            
+        
+
+        circle_marker_fada8e099f1841addc9cc03c0d211203.bindPopup(popup_fefc15674141a8d2ae19fcc582ecfa5e)
+        ;
+
+        
+    
+    
+            var marker_1384c19060713c515cc9f1f76d66a9f6 = L.marker(
+                [-22.87, -43.11],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_e4f4e9f01bf6874e96414a636637e5e4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#3\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_1384c19060713c515cc9f1f76d66a9f6.setIcon(div_icon_e4f4e9f01bf6874e96414a636637e5e4);
+        
+    
+            var circle_marker_9b556bef14b9936bcd3f9973c97dff65 = L.circleMarker(
+                [-22.765, -42.9],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.50632911392405, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_3ba7ea2d77612111dd9304d675cf6da3 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_07db03b4b63191f693bc11c158d26d47 = $(`<div id="html_07db03b4b63191f693bc11c158d26d47" style="width: 100.0%; height: 100.0%;">     <b>#4 Ponto Crítico</b><br>     Acidentes: 49<br>     Lat: -22.7650 | Lon: -42.9000     </div>`)[0];
+                popup_3ba7ea2d77612111dd9304d675cf6da3.setContent(html_07db03b4b63191f693bc11c158d26d47);
+            
+        
+
+        circle_marker_9b556bef14b9936bcd3f9973c97dff65.bindPopup(popup_3ba7ea2d77612111dd9304d675cf6da3)
+        ;
+
+        
+    
+    
+            var marker_6f64ffb4a5d56683a8fd45ecef9f951f = L.marker(
+                [-22.765, -42.9],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_67cf75d0b35c300e384ed39dd85fffd7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#4\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_6f64ffb4a5d56683a8fd45ecef9f951f.setIcon(div_icon_67cf75d0b35c300e384ed39dd85fffd7);
+        
+    
+            var circle_marker_2e53d6a90b03a04307a88508050e177f = L.circleMarker(
+                [-22.845, -43.1],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.873417721518987, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_03cf4c87206f08cb1f73ff8105b22e60 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c9b3d5fa9d5af9856d52f57cbcfcd239 = $(`<div id="html_c9b3d5fa9d5af9856d52f57cbcfcd239" style="width: 100.0%; height: 100.0%;">     <b>#5 Ponto Crítico</b><br>     Acidentes: 47<br>     Lat: -22.8450 | Lon: -43.1000     </div>`)[0];
+                popup_03cf4c87206f08cb1f73ff8105b22e60.setContent(html_c9b3d5fa9d5af9856d52f57cbcfcd239);
+            
+        
+
+        circle_marker_2e53d6a90b03a04307a88508050e177f.bindPopup(popup_03cf4c87206f08cb1f73ff8105b22e60)
+        ;
+
+        
+    
+    
+            var marker_dc42311d0681aaf31a9a2e9de7caffcc = L.marker(
+                [-22.845, -43.1],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_23d53cdbe93dc006374197ef70a846db = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#5\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_dc42311d0681aaf31a9a2e9de7caffcc.setIcon(div_icon_23d53cdbe93dc006374197ef70a846db);
+        
+    
+            var circle_marker_de66bcd02eb77aac516913a151170ec8 = L.circleMarker(
+                [-22.81, -43.07],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.556962025316455, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_6fe14db4e2cee07662ad6ee5423fd0e4 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_07897300b5c21db0b92852f0cad779e1 = $(`<div id="html_07897300b5c21db0b92852f0cad779e1" style="width: 100.0%; height: 100.0%;">     <b>#6 Ponto Crítico</b><br>     Acidentes: 46<br>     Lat: -22.8100 | Lon: -43.0700     </div>`)[0];
+                popup_6fe14db4e2cee07662ad6ee5423fd0e4.setContent(html_07897300b5c21db0b92852f0cad779e1);
+            
+        
+
+        circle_marker_de66bcd02eb77aac516913a151170ec8.bindPopup(popup_6fe14db4e2cee07662ad6ee5423fd0e4)
+        ;
+
+        
+    
+    
+            var marker_28f1b6338c3eb552e89dc93cbaea6ad0 = L.marker(
+                [-22.81, -43.07],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_b15a574816d5c1ea0be23913537fc932 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#6\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_28f1b6338c3eb552e89dc93cbaea6ad0.setIcon(div_icon_b15a574816d5c1ea0be23913537fc932);
+        
+    
+            var circle_marker_5c27f5e5b16f24573d21c35d1609996c = L.circleMarker(
+                [-22.875, -43.115],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.974683544303797, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_af1129f30de5ff0940c8bd9fd62a56b9 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_cefa21b98758b8830111310c9ef68042 = $(`<div id="html_cefa21b98758b8830111310c9ef68042" style="width: 100.0%; height: 100.0%;">     <b>#7 Ponto Crítico</b><br>     Acidentes: 41<br>     Lat: -22.8750 | Lon: -43.1150     </div>`)[0];
+                popup_af1129f30de5ff0940c8bd9fd62a56b9.setContent(html_cefa21b98758b8830111310c9ef68042);
+            
+        
+
+        circle_marker_5c27f5e5b16f24573d21c35d1609996c.bindPopup(popup_af1129f30de5ff0940c8bd9fd62a56b9)
+        ;
+
+        
+    
+    
+            var marker_95eff88d37d948a692232484befe2490 = L.marker(
+                [-22.875, -43.115],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_ed8ce75565d98f848f09eea2d64a99c8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#7\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_95eff88d37d948a692232484befe2490.setIcon(div_icon_ed8ce75565d98f848f09eea2d64a99c8);
+        
+    
+            var circle_marker_9aac6d3520517b25c12dcb399e9b25f8 = L.circleMarker(
+                [-22.855, -43.1],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.974683544303797, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_567f6a562833dc0276fb4f0749037451 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b9bd041e0e323980dbfd7ab826590936 = $(`<div id="html_b9bd041e0e323980dbfd7ab826590936" style="width: 100.0%; height: 100.0%;">     <b>#8 Ponto Crítico</b><br>     Acidentes: 41<br>     Lat: -22.8550 | Lon: -43.1000     </div>`)[0];
+                popup_567f6a562833dc0276fb4f0749037451.setContent(html_b9bd041e0e323980dbfd7ab826590936);
+            
+        
+
+        circle_marker_9aac6d3520517b25c12dcb399e9b25f8.bindPopup(popup_567f6a562833dc0276fb4f0749037451)
+        ;
+
+        
+    
+    
+            var marker_de753f7a0763ba9a203d59813801179e = L.marker(
+                [-22.855, -43.1],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_72f39a0364f7def499cf706c58769bbd = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#8\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_de753f7a0763ba9a203d59813801179e.setIcon(div_icon_72f39a0364f7def499cf706c58769bbd);
+        
+    
+            var circle_marker_1dbfc82857daa006eb390dd1b70b78e3 = L.circleMarker(
+                [-22.795, -43.035000000000004],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.341772151898734, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_e2c51dda5e5b5e6da63a48271c71fdac = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_63e38cac9b87fbe59611053cf1f70741 = $(`<div id="html_63e38cac9b87fbe59611053cf1f70741" style="width: 100.0%; height: 100.0%;">     <b>#9 Ponto Crítico</b><br>     Acidentes: 39<br>     Lat: -22.7950 | Lon: -43.0350     </div>`)[0];
+                popup_e2c51dda5e5b5e6da63a48271c71fdac.setContent(html_63e38cac9b87fbe59611053cf1f70741);
+            
+        
+
+        circle_marker_1dbfc82857daa006eb390dd1b70b78e3.bindPopup(popup_e2c51dda5e5b5e6da63a48271c71fdac)
+        ;
+
+        
+    
+    
+            var marker_3f2560fe421758266048b05b4fb243c7 = L.marker(
+                [-22.795, -43.035000000000004],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_db39d47753b018e38c5f85c8107434ae = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#9\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_3f2560fe421758266048b05b4fb243c7.setIcon(div_icon_db39d47753b018e38c5f85c8107434ae);
+        
+    
+            var circle_marker_56c09067180bfbebb54a495bcd6f4a31 = L.circleMarker(
+                [-22.815, -43.075],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.70886075949367, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_2fbdf7507762e930d1a747651583621a = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7e263802b2dd30b5eaa59012542deadf = $(`<div id="html_7e263802b2dd30b5eaa59012542deadf" style="width: 100.0%; height: 100.0%;">     <b>#10 Ponto Crítico</b><br>     Acidentes: 37<br>     Lat: -22.8150 | Lon: -43.0750     </div>`)[0];
+                popup_2fbdf7507762e930d1a747651583621a.setContent(html_7e263802b2dd30b5eaa59012542deadf);
+            
+        
+
+        circle_marker_56c09067180bfbebb54a495bcd6f4a31.bindPopup(popup_2fbdf7507762e930d1a747651583621a)
+        ;
+
+        
+    
+    
+            var marker_854c464be206d4cde0306f17219d2567 = L.marker(
+                [-22.815, -43.075],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_72522895205c5410efe012cfa14da13f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#10\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_854c464be206d4cde0306f17219d2567.setIcon(div_icon_72522895205c5410efe012cfa14da13f);
+        
+    
+            var circle_marker_d88fb618ce7d6b73a953b187a2d0e8ee = L.circleMarker(
+                [-22.875, -43.125],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.70886075949367, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_720d1c41af5fe0c5924177ab4e540816 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_78a44759b3c7e700d722f32a1ee70a8a = $(`<div id="html_78a44759b3c7e700d722f32a1ee70a8a" style="width: 100.0%; height: 100.0%;">     <b>#11 Ponto Crítico</b><br>     Acidentes: 37<br>     Lat: -22.8750 | Lon: -43.1250     </div>`)[0];
+                popup_720d1c41af5fe0c5924177ab4e540816.setContent(html_78a44759b3c7e700d722f32a1ee70a8a);
+            
+        
+
+        circle_marker_d88fb618ce7d6b73a953b187a2d0e8ee.bindPopup(popup_720d1c41af5fe0c5924177ab4e540816)
+        ;
+
+        
+    
+    
+            var marker_ba78caa881e4666f884a771a14f43b66 = L.marker(
+                [-22.875, -43.125],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_f557e516936d51b41f053be9bf77e4eb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#11\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_ba78caa881e4666f884a771a14f43b66.setIcon(div_icon_f557e516936d51b41f053be9bf77e4eb);
+        
+    
+            var circle_marker_82aa8db6df8679d58744698d775b75f0 = L.circleMarker(
+                [-22.795, -43.025],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.70886075949367, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_922591311d894f1845c719f3a737433c = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f4d2a38bc732620be6a9375217779505 = $(`<div id="html_f4d2a38bc732620be6a9375217779505" style="width: 100.0%; height: 100.0%;">     <b>#12 Ponto Crítico</b><br>     Acidentes: 37<br>     Lat: -22.7950 | Lon: -43.0250     </div>`)[0];
+                popup_922591311d894f1845c719f3a737433c.setContent(html_f4d2a38bc732620be6a9375217779505);
+            
+        
+
+        circle_marker_82aa8db6df8679d58744698d775b75f0.bindPopup(popup_922591311d894f1845c719f3a737433c)
+        ;
+
+        
+    
+    
+            var marker_5a07ef856ff56417fe5abaf4af69b9f8 = L.marker(
+                [-22.795, -43.025],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_d63846ad67c36174f0412a5c6b035b97 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#12\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_5a07ef856ff56417fe5abaf4af69b9f8.setIcon(div_icon_d63846ad67c36174f0412a5c6b035b97);
+        
+    
+            var circle_marker_e1fad904979b5ca07cda1c0a7b52633f = L.circleMarker(
+                [-22.805, -43.06],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.39240506329114, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_00650f9cb854ccdee864d117c4b875f1 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7205c87f0746a311c021c60ff6514205 = $(`<div id="html_7205c87f0746a311c021c60ff6514205" style="width: 100.0%; height: 100.0%;">     <b>#13 Ponto Crítico</b><br>     Acidentes: 36<br>     Lat: -22.8050 | Lon: -43.0600     </div>`)[0];
+                popup_00650f9cb854ccdee864d117c4b875f1.setContent(html_7205c87f0746a311c021c60ff6514205);
+            
+        
+
+        circle_marker_e1fad904979b5ca07cda1c0a7b52633f.bindPopup(popup_00650f9cb854ccdee864d117c4b875f1)
+        ;
+
+        
+    
+    
+            var marker_85d1dccf2b87ec2d2c2631860e4db27f = L.marker(
+                [-22.805, -43.06],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_2154c35c831fa7423278dcbd746f5a8d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#13\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_85d1dccf2b87ec2d2c2631860e4db27f.setIcon(div_icon_2154c35c831fa7423278dcbd746f5a8d);
+        
+    
+            var circle_marker_211f14c382f100afa53dc5adb2fa5df4 = L.circleMarker(
+                [-22.830000000000002, -43.09],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.39240506329114, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_2ad5349822cf26bf32bb02196d6cf27d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4df8ec205c674f6227fb6973b9392aa6 = $(`<div id="html_4df8ec205c674f6227fb6973b9392aa6" style="width: 100.0%; height: 100.0%;">     <b>#14 Ponto Crítico</b><br>     Acidentes: 36<br>     Lat: -22.8300 | Lon: -43.0900     </div>`)[0];
+                popup_2ad5349822cf26bf32bb02196d6cf27d.setContent(html_4df8ec205c674f6227fb6973b9392aa6);
+            
+        
+
+        circle_marker_211f14c382f100afa53dc5adb2fa5df4.bindPopup(popup_2ad5349822cf26bf32bb02196d6cf27d)
+        ;
+
+        
+    
+    
+            var marker_16844710d9c45443551496f969a1f1ac = L.marker(
+                [-22.830000000000002, -43.09],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_cb67cf00501d8a5078647eb80464f87c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#14\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_16844710d9c45443551496f969a1f1ac.setIcon(div_icon_cb67cf00501d8a5078647eb80464f87c);
+        
+    
+            var circle_marker_88e3d5b669f39fded6a100d05178afcf = L.circleMarker(
+                [-22.765, -42.910000000000004],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.075949367088604, "stroke": true, "weight": 3}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+        var popup_35904c0f430f40bd8f664f5138f99342 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0b99f4fba5d857e4782f20de4416fc2a = $(`<div id="html_0b99f4fba5d857e4782f20de4416fc2a" style="width: 100.0%; height: 100.0%;">     <b>#15 Ponto Crítico</b><br>     Acidentes: 35<br>     Lat: -22.7650 | Lon: -42.9100     </div>`)[0];
+                popup_35904c0f430f40bd8f664f5138f99342.setContent(html_0b99f4fba5d857e4782f20de4416fc2a);
+            
+        
+
+        circle_marker_88e3d5b669f39fded6a100d05178afcf.bindPopup(popup_35904c0f430f40bd8f664f5138f99342)
+        ;
+
+        
+    
+    
+            var marker_8bf797b3d0342036289803312f450b20 = L.marker(
+                [-22.765, -42.910000000000004],
+                {}
+            ).addTo(map_2192d1da368901b9df70bd9753d8042f);
+        
+    
+            var div_icon_0ce98553f9731aafb4125d6624ca82a2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:10px;font-weight:bold;color:white;text-align:center;\"\u003e#15\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_8bf797b3d0342036289803312f450b20.setIcon(div_icon_0ce98553f9731aafb4125d6624ca82a2);
+        
+</script>
+</html>

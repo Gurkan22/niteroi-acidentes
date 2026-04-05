@@ -5,6 +5,11 @@ data/raw/
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 
+# Cache do Jupyter
+notebooks/cache/
+notebooks/.ipynb_checkpoints/
+outputs/.ipynb_checkpoints/
+
 # Python
 __pycache__/
 *.py[cod]

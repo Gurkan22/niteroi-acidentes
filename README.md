@@ -29,6 +29,7 @@ Este projeto analisa dados abertos de acidentes registrados pela Polícia Rodovi
 | Hotspot principal | Lat -22.880 / Lon -43.110 (79 acidentes) |
 | Acurácia — Random Forest | 73,6% (cross-val: 75,7% ± 2,2%) |
 | Feature mais preditiva | Tipo de acidente |
+| Mapa interativo | [gurkan22.github.io/niteroi-acidentes](https://gurkan22.github.io/niteroi-acidentes) |
 
 ---
 
